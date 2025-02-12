@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(219, 207, 249);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(155, 108, 247);
+}
+
+img {
+    width: 200px;
+    height: 150px;
+}
+
+main {
+    margin: 30px 400px auto 400px;
+    padding: 16px;
+    color: white;
+    text-align: left;
+    background-color: rgb(155, 108, 247);
+}
+
+main h2 {
+    font-weight: bolder;
+}
+
+li {
+  list-style: none;  
+}
+
+#span1 {
+    font-weight: bolder;
+}
+
+#span2 {
+    padding: 0 5px 0 5px;
+    font-weight: bolder;
+    color: black;
+    background-color: rgb(247, 227, 116);
+    border-radius: 6px;
+}
