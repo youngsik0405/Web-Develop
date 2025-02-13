@@ -1,0 +1,60 @@
+h1 {
+  font-size: 48px;
+  color: rgb(71, 62, 62);
+}
+
+a {
+  padding: 12px;
+  background-color: rgb(167, 1, 78);
+  color: white;
+  border-radius: 4px;
+  font-size: 24px;
+}
+
+a:hover {
+  background-color: rgb(180, 12, 90);
+  text-decoration: none;
+}
+
+ol {
+  list-style: none;
+}
+
+li {
+  margin: 42px;
+  background-color: rgb(223, 136, 124);
+  border-radius: 6px;
+}
+
+/* 나의 풀이 
+body {
+    text-align: center;
+    background-color: rgb(233, 215, 207);
+}
+
+h1 {
+    font-family: 'Oswald';
+    font-weight: bold;
+    color: rgb(33, 122, 111);
+}
+
+a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+p {
+    font-family: 'Fira Sans';
+}
+
+#first {
+    color: rgb(10, 11, 133);
+}
+
+#second {
+    color: rgb(133, 11, 53);
+}
+
+a:hover {
+    color: blueviolet;
+} */
