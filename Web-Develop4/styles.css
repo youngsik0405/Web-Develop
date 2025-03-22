@@ -2,6 +2,8 @@ html {
   background-color: rgb(236, 236, 236);
   font-family: 'Krub', sans-serif;
   font-weight: 400;
+
+  --color-grey-100: rgb(236, 236, 236);
 }
 
 .card-container {
