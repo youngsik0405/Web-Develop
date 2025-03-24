@@ -22,6 +22,7 @@ html {
   width: 350px;
   margin: 50px auto;
   box-shadow: 3px 3px 10px rgb(201, 200, 200);
+  transition: transform 0.5s ease-out;
 }
 
 .card-container:hover {
@@ -72,7 +73,7 @@ h1 {
 
 .icon {
   display: flex;
-  width: 10px;
+  width: 15px;
 }
 
 .sub-feature-text {
@@ -98,6 +99,7 @@ h1 {
   border: 2px solid rgb(224, 224, 224);
   font-size: var(--size-1);
   font-weight: 600;
+  transition: background-color 0.5s ease-out;
 }
 
 .button:hover {
