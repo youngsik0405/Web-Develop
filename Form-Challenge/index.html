@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Challenge</title>
+    <title>Forms Challenge</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -21,68 +21,94 @@
           <ul>
             <li>
               <label for="username">Your Name</label>
-              <input type="text" id="user-name" name="username" required/>
+              <input type="text" id="username" name="username" required />
             </li>
             <li>
-              <label for="useremail">Your E-Mail Address</label>
-              <input type="email" id="user-email" name="useremail" required/>
+              <label for="email">Your E-Mail Address</label>
+              <input type="email" id="email" name="email" required />
             </li>
             <li>
-              <label for="userphone">Your Phone Number</label>
-              <input type="text" id="user-phone" name="userphone" required/>
+              <label for="phone">Your Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                minlength="5"
+              />
+            </li>
+            <li>
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                required
+                minlength="10"
+                maxlength="200"
+              ></textarea>
             </li>
           </ul>
         </section>
 
         <section>
-          <label for="usermessage">Your Message</label>
-          <textarea id="user-message" name="usermessage" rows="8"></textarea>
-        </section>
-
-        <section>
-          <label for="how-find">How did you us?</label>
-          <select id="how-find" name="howfind">
-            <option>Web Search</option>
-            <option>World of Mouth</option>
-            <option>Other</option>
+          <label for="channel">How did you us?</label>
+          <select id="channel" name="channel" required>
+            <option value="search">Web Search</option>
+            <option value="word-of-mouth">Word of Mouth</option>
+            <option value="other">Other</option>
           </select>
         </section>
 
         <section>
           <h2>How should we reply?</h2>
           <ul>
-            <li class="form-control-inline">
-              <input type="radio" id="call-me" name="reply" value="call me" />
-              <label for="call-me">Call me</label>
-            </li>
-            <li class="form-control-inline">
+            <li class="inline-control">
               <input
                 type="radio"
-                id="send-email"
+                id="reply-phone"
                 name="reply"
-                value="send email"
+                value="phone"
+                required
               />
-              <label for="send-email">Send me an email</label>
+              <label for="reply-phone">Call me</label>
             </li>
-            <li class="form-control-inline">
-              <input type="radio" id="no-reply" name="reply" value="no reply" />
-              <label for="no-reply">Don't reply</label>
+            <li class="inline-control">
+              <input
+                type="radio"
+                id="reply-email"
+                name="reply"
+                value="email"
+                required
+              />
+              <label for="reply-email">Send me an email</label>
+            </li>
+            <li class="inline-control">
+              <input
+                type="radio"
+                id="reply-none"
+                name="reply"
+                value="no reply"
+                required
+              />
+              <label for="reply-none">Don't reply</label>
             </li>
           </ul>
         </section>
 
-        <section>
-          <div class="form-control-inline">
-            <input type="checkbox" name="term" id="agree-term" />
+        <section class="inline-control">
+            <input
+              type="checkbox"
+              name="accept-terms"
+              id="accept-terms"
+              required
+            />
             <label for="accept-terms">Accept Terms</label>
-          </div>
         </section>
 
-        <section>
-          <div class="control-button">
-            <button type="reset" class="name">Clear</button>
-            <button type="submit" class="submit">Submit</button>
-          </div>
+        <section id="form-actions">
+            <button type="reset" class="btn-empty">Clear</button>
+            <button type="submit" class="btn-filled">Submit</button>
         </section>
       </form>
     </main>

@@ -1,18 +1,24 @@
 body {
-    background-color:rgb(235, 255, 255);
-    font-family: 'Roboto', sans-serif;
+    background-color:rgb(236, 252, 253);
+    font-family: sans-serif;
 }
 
 h1 {
     text-align: center;
+    margin: 2rem;
 }
 
 form {
-    width: 30rem;
-    margin: 3rem auto;
-    background-color: rgb(238, 240, 251);
+    width: 40rem;
+    margin: auto;
+    background-color: rgb(246, 250, 255);
     border-radius: 6px;
     padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 1rem;
 }
 
 ul {
@@ -22,57 +28,74 @@ ul {
 }
 
 label {
-    margin-bottom: 0.5rem;
+    color: rgb(66, 76, 97);
     display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 input,
 textarea,
 select {
-    width: 20rem;
+    width: 100%;
     display: block;
-    margin: 1rem;
     box-sizing: border-box;
     font: inherit;
-    padding: 0.25rem;
-    border: 1px solid gray;
+    padding: 0.5rem;
+    border: 1px solid rgb(152, 159, 184);
+    border-radius: 4px;
 }
 
 textarea {
-    resize: vertical;
+    resize: none;
 }
 
 input:focus,
 textarea:focus {
-    background-color: rgb(219, 190, 253);
-    color: rgb(32, 5, 63);
-    border-color: rgb(32, 5, 63);
+    background-color: rgb(217, 227, 247);
 }
 
 button {
-    display: block;
     font: inherit;
-    background-color: rgb(32, 5, 63);
-    color: white;
-    border: 1px solid rgb(32, 5, 63);
+    border: 1px solid rgb(51,67, 100);
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
     cursor: pointer;
-    margin: 0.25rem;
 }
 
+#form-actions {
+    text-align: right;
+}
 
-.form-control-inline {
+.btn-filled {
+    background-color: rgb(51,67, 100);
+    color: white;
+}
+
+.btn-empty {
+    background-color: transparent;
+    color: rgb(51,67, 100);
+}
+
+.btn-filled:hover {
+    background-color: rgb(69, 89, 129);
+    border-color: rgb(69, 89, 129);
+}
+
+.btn-empty:hover {
+    background-color: rgb(208, 215, 230);
+}
+
+.inline-control {
     display: flex;
 }
 
-.control-button {
-    display: flex;
-    justify-content: right;
+.inline-control label {
+    margin: 0;
+    margin-left: 0.5rem;
 }
 
-
-.form-control-inline input {
+.inline-control input {
     width: auto;
-    margin-right: 0.5rem;
 }
+
