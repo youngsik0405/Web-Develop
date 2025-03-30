@@ -1,25 +1,24 @@
 body {
-    background-color: rgb(31, 30, 30);
+    background-color:rgb(235, 255, 255);
     font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     text-align: center;
-    color: white;
+}
+
+form {
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: rgb(238, 240, 251);
+    border-radius: 6px;
+    padding: 1rem;
 }
 
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-form {
-    width: 30rem;
-    margin: 3rem auto;
-    background-color: rgb(255, 255, 255);
-    padding: 1rem;
-    border-radius: 6px;
 }
 
 label {
@@ -32,12 +31,11 @@ textarea,
 select {
     width: 20rem;
     display: block;
-    margin-bottom: 1rem;
+    margin: 1rem;
     box-sizing: border-box;
     font: inherit;
-    border: 1px solid rgb(184, 184, 184);
     padding: 0.25rem;
-    color: rgb(61, 58, 58);
+    border: 1px solid gray;
 }
 
 textarea {
@@ -60,15 +58,17 @@ button {
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
     cursor: pointer;
+    margin: 0.25rem;
 }
 
-button:hover {
-    background-color: rgb(52, 14, 95);
-    border-color: rgb(52, 14, 95);
-}
 
 .form-control-inline {
     display: flex;
+}
+
+.control-button {
+    display: flex;
+    justify-content: right;
 }
 
 
